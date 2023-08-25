@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-               git 'https://github.com/sibanando/maven_proj01'
+               git branch: 'main', url: 'https://github.com/sibanando/maven_proj01'
                echo "sucessful"
             }
         }
