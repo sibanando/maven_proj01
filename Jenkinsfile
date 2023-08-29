@@ -18,10 +18,10 @@ pipeline {
         stage('Deploy on docker') {
             steps {
                 
-               sh 'docker rmi -f tomcatweb'
-               sh 'docker build -t tomcatweb .'
+               
+               sh 'docker build -t tomcatweb1 .'
 
-               sh 'docker run -d -p 9000:8080  tomcatweb'
+               sh 'docker run -d -p 9001:8080  tomcatweb1'
             }
         }
     }
